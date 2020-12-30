@@ -1380,6 +1380,31 @@
 	#header {
 		font-weight: 700;
 	}
+	#toolbar {
+		background: white;
+		height: 50px;
+		display: flex;
+		
+		
+	}
+
+		#toolbar div {
+			margin-bottom: 0px;
+			padding: 10px;
+			flex-grow: 1;
+	
+		}
+		#toolbar div #logo {
+			width: 30px;
+			height: 30px;
+			
+			
+
+		}
+		#toolbar div #search_icon{
+			width: 30px;
+			height: 30px;
+		}
 
 /* Menu */
 
@@ -1388,10 +1413,19 @@
 		color: white;
 		background: white;
 		font-weight: bold;
-		display: fixed;
+		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
+		#nav a{
+			padding-left: 10px;
+			padding-right: 10px;			
+			flex-grow: 1;
+			text-align: center;
+			
+		}
+		
+
 
 
 		
