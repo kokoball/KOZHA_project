@@ -1432,7 +1432,12 @@
 			
 		} */
 		
-/* nav */			
+/* nav */		
+	#nav {
+		width: auto;
+		background-color: #fff;
+	}
+
 	#nav section {
 		display: none;
 		padding: 20px 0 0;
@@ -1446,11 +1451,13 @@
 	#nav  label {
 		display: inline-block;
 		margin: 0 0 -1px;
-		padding: 15px 25px;
+		padding: 1.5% 2.5%;
+		font-size: 50%;
 		font-weight: 600;
 		text-align: center;
 		color: #bbb;
-		border: 1px solid transparent;}
+		border: 1px solid transparent;
+		width: 18.5%;}
 	
 	#nav label:hover {
 		color: #2e9cdf;
