@@ -1517,7 +1517,7 @@
 		#nav .inner .inner-text-bottom #inner-text-bottom-3 {
 			display: flex;
 			font-size: 80%;
-			margin: 2%;
+			margin: 0%;
 			margin-top: 0;
 		}
 			#nav .inner .inner-text-bottom #inner-text-bottom-3 * {
@@ -1576,7 +1576,7 @@
 	}
 
 	/* Caption text */
-	.text {
+	.slide-text {
 	color: #f2f2f2;
 	font-size: 15px;
 	padding: 8px 12px;
@@ -1631,7 +1631,7 @@
 
 	/* On smaller screens, decrease text size */
 	@media only screen and (max-width: 300px) {
-	.prev, .next,.text {font-size: 11px}
+	.prev, .next,.slide-text {font-size: 11px}
 	}
 		
 	
@@ -1698,7 +1698,7 @@
 		padding: 3%;
 		border: 1px solid #CECECE;
 		padding-bottom: 1px;
-		margin: 3%;
+		margin: 0%;
 		background-color: #fff;
 		box-shadow: 2px 3px gray;
 		
@@ -1715,7 +1715,7 @@
 		display: grid;
 		grid-template-columns: 1.5fr 2fr 2fr 1fr 1fr 0.5fr ;
 		grid-template-rows: 4fr;
-		grid-gap: 10px;
+		grid-gap: 3px;
 	}
 
 	.box1 {
@@ -1723,37 +1723,86 @@
 		grid-row: 1/4;
 
 	}
+	.box1 img {
+		margin-top: 10%;
+		width: 80%;
+		
+	}
 	
 	.box2 {
-		grid-column: 2;
+		grid-column: 2/4;
 		grid-row: 1/2;
+		font-weight: bold;
+		font-size: 110%;
+
+	}
+	.box3 {
+		grid-column: 4/6;
+		grid-row: 1/2;
+		font-size: 90%;
 
 	}
 	.box4 {
-		grid-column: 3;
-		grid-row: 1/2;
+		grid-column: 4;
+		grid-row: 2/2;
+		text-align: center;
 
 	}
 	.box5 {
-		grid-column: 4;
-		grid-row: 1/2;
+		grid-column: 5;
+		grid-row: 2/2;
+		text-align: center;
 
 	}
 	.box6 {
-		grid-column: 5;
-		grid-row: 1/2;
+		grid-column: 6;
+		grid-row: 2/2;
 
 	}
 	.box7 {
-		grid-column: 6;
-		grid-row: 1/2;
+		grid-column: 2/4;
+		grid-row: 2/2;
+		font-weight: bold;
+		font-size: 120%;
 
 	}
 	.box8 {
-		grid-column: 7;
-		grid-row: 1/2;
+		grid-column: 4;
+		grid-row: 3/3;
+		font-size: 70%;
+		text-align: center;
 
 	}
+	.box9 {
+		grid-column: 2;
+		grid-row: 3/3;
+		color: gray;
+		font-size: 80%;
+
+	}
+	.box10 {
+		grid-column: 3;
+		grid-row: 3/3;
+		color: gray;
+		font-size: 80%;
+
+	}
+	.box11 {
+		grid-column: 2/4;
+		grid-row: 4/4;
+		font-weight: bold;
+		font-size: 110%;
+
+	}
+	.box12 {
+		grid-column: 4/7;
+		grid-row: 4/4;
+		color: gray;
+		font-size: 70%;
+		text-align: right;
+	}
+
+
 
 /* upload button */
 	.upload_button {
@@ -1774,3 +1823,22 @@
 		object-fit: cover;
 		z-index: 1000;
 	}
+/* img content */
+	.img-content {
+
+	}
+
+
+
+/* like button */
+.like-button {
+	width: 50px;
+	height: 50px; 
+	z-index: 1000;
+	position: absolute;
+	bottom: 140px;
+	right: 1em;
+	background-color: none;
+	color: none;
+}
+
