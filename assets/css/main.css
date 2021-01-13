@@ -1467,8 +1467,8 @@
 	}
 
 	#nav .inner img {
-		width: 70%;
-		height: 70%;
+		width: 85%;
+		height: 80%;
 		object-fit: cover;
 	}
 
@@ -1499,7 +1499,7 @@
 			color: #1407AF;
 		}
 	#nav .inner .inner-text-bottom {
-		width: 80%;
+		width: 85%;
 		margin-top: 2%;
 		margin-bottom: 2%;
 		border: 1px solid gray;
