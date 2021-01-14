@@ -31,7 +31,7 @@
 			<div id="nav">
 				<!--디폴트 메뉴-->
 				<input id="tab1" type="radio" name="tabs" checked>
-				<label for="tab1">new</label>
+				<label for="tab1" onclick="new_tabButton()">new</label>
 
 				<input id="tab2" type="radio" name="tabs">
 				<label for="tab2">Daily</label>
@@ -43,7 +43,7 @@
 				<label for="tab4">QnA</label>
 
 				<input id="tab5" type="radio" name="tabs">
-				<label for="tab5">MY</label>
+				<label for="tab5" onclick="MY_tabButton()">MY</label>
 
 				<!-- Banner -->
 				<section id="content1">
@@ -370,14 +370,65 @@
 				</section>
 
 				<section id="content5">
-					<div class="inner">
-						asdf
+					<div id="User-profile" style="background-image: url('images/my_user_profile_background.png');">
+						<div class="box1">
+							<img src="images/gray_circle.png">
+						</div>
+						<div class="box2">
+							<h3>User_ID</h3>
+						</div>
+						<div class="box3">
+							<img src="images/more-vertical_button.png">
+						</div>
+						<div class="box4">User_Profile</div>
+						<div class="box5"><h3>72</h3>Following</div>
+						<div class="box6"><h3>12.2K</h3>Followers</div>
+						<div class="box7"><h3>36.3M</h3>Likes</div>
+					</div>
+
+					<div id="User-tabs-container">
+						<ul class="User-tabs">
+							<li><a href="#" data-tag="upload" class="button active"><img src="images/user-tab-all.png"></a></li>
+							<li><a href="#" data-tag="like" class="button"><img src="images/user-tab-like.png"></a></li>
+							<li><a href="#" data-tag="tag" class="button"><img src="images/user-tab-tag.png"></a></li>
+						</ul>
+					</div>
+					<div id="User-contents">
+						<div class="content">
+							<div class="media upload">
+								<div class="upload-content">
+									<div><img src="images/weekly_pick_1.png"></div>
+									<div class="inner-text-bottom">
+										<div id="inner-text-bottom-1">Style Title</div>
+										<div id="inner-text-bottom-2">
+											<div>Style Tag1</div>
+											<div>Style Tag2</div>
+											<div>Style Tag3</div>
+											<div>Style Tag4</div>
+										</div>
+										<div id="inner-text-bottom-3">
+											<div><img src="images/gray_circle.png"></div>
+											<div>User_ID</div>
+											<div>조회수 6795</div>
+											<div>좋아요 239</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="media like">
+								<a href="images/fulls/05.jpg"><img src="images/thumbs/05.jpg" alt="" title="This right here is a caption." /></a>
+							</div>
+							<div class="media tag">
+								<a href="images/fulls/05.jpg"><img src="images/thumbs/05.jpg" alt="" title="This right here is a caption." /></a>
+							</div>
+						</div>
+						
 					</div>
 				</section>
 
 			</div>
 
-			<!-- Gallery -->
+			<!-- new tab -->
 			<section id="galleries">
 				<!-- Photo Galleries -->
 				<div class="gallery">
@@ -560,6 +611,8 @@
 				</div>
 			</section>
 
+			<!-- MY tab -->
+
 			<!-- Contact -->
 			<section id="contact">
 				<!-- Social -->
@@ -652,6 +705,28 @@
 			}
 			slides[slideIndex - 1].style.display = "block";
 		}</script>
+	<!-- TabMenu MY button -->
+	<script>
+		function MY_tabButton() {
+			var text = document.getElementById("galleries");
+			if (text.style.display === "block") {
+				text.style.display = "none";
+			} else {
+				text.style.display = "none";
+			}
+		}
+	</script>
+	<!-- TabMenu new button-->
+	<script>
+		function new_tabButton() {
+			var text = document.getElementById("galleries");
+			if (text.style.display === "none") {
+				text.style.display = "block";
+			} else {
+				text.style.display = "block";
+			}
+		}
+	</script>
 
 </body>
 

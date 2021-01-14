@@ -55,11 +55,11 @@
 		// Scrolly.
 			$('.scrolly').scrolly();
 
-		// Gallery.
-			$('.gallery').each(function() {
+		// user_content.
+			$('#content5').each(function() {
 
-				var	$gallery = $(this),
-					$content = $gallery.find('.content');
+				var	$user_content = $(this),
+					$content = $user_content.find('.content');
 
 				// Poptrox.
 					$content.poptrox({
@@ -67,10 +67,10 @@
 					});
 
 				// Tabs.
-					$gallery.each( function() {
+					$user_content.each( function() {
 
 						var $this = $(this),
-							$tabs = $this.find('.tabs a'),
+							$tabs = $this.find('.User-tabs a'),
 							$media = $this.find('.media');
 
 						$tabs.on('click', function(e) {
