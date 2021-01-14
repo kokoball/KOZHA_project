@@ -2069,14 +2069,126 @@
 	}
 
 	.upload-content img {
-		width: 80%;
+		width: 100%;
 		margin: 0;
 		max-width: 450px;
 		height: 100%;
 	}
 	.upload-content .inner-text-bottom {
 		margin: 0;
+		border: none;
+		width: 100%;
+	}
+
+	#User-contents .content .media {
+		margin: 3%;
+		box-shadow: none;
+		border: none;
+		border: solid 1px #CECECE;
 	}
 			
+	
+
+
+	.upload-content .upload-user-textbox {
+		display: grid;
+		grid-template-columns: 1.5fr 2fr 2fr 1fr 1fr 1fr ;
+		grid-template-rows: 3fr;
+		grid-gap: 3px;
+	}
+	
+
+	.upload-user-textbox .box1 {
+		grid-column: 1;
+		grid-row: 1/4;
+
+	}
+	.upload-user-textbox .box1 img {
+		margin-top: 10%;
+		width: 50px;
+		height: 50px;
+		min-height: 30px;
+		min-width: 30px;
+	}
+	.upload-user-textbox .box2 {
+		grid-column: 2/4;
+		grid-row: 1/2;
+		font-weight: bold;
+		font-size: 110%;
+	}
+	.upload-user-textbox .box3 {
+		grid-column: 4/7;
+		grid-row: 1/2;
+		font-size: 90%;
+	}
+	.upload-user-textbox .box4 {
+		grid-column: 4;
+		grid-row: 2/2;
+		text-align: center;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+		.upload-user-textbox .box4 img{
+			width: 20px;
+			height: 20px;
+			min-height: 15px;
+			min-width: 15px;
+		}
+	.upload-user-textbox .box5 {
+		grid-column: 5;
+		grid-row: 2/2;
+		text-align: center;
+	}
+		.upload-user-textbox .box5 img{
+			width: 20px;
+			height: 20px;
+			min-height: 15px;
+			min-width: 15px;
+		}
+	.upload-user-textbox .box6 {
+		grid-column: 6;
+		grid-row: 2/2;
+	}
+		.upload-user-textbox .box6 img{
+			width: 20px;
+			height: 20px;
+			min-height: 15px;
+			min-width: 15px;
+		}
+	.upload-user-textbox .box7 {
+		grid-column: 2/4;
+		grid-row: 2/2;
+		font-weight: bold;
+		font-size: 120%;
+	}
+	.upload-user-textbox .box8 {
+		grid-column: 4;
+		grid-row: 3/3;
+		font-size: 70%;
+		text-align: center;
+	}
+	.upload-user-textbox .box9 {
+		grid-column: 5;
+		grid-row: 3/3;
+		font-size: 70%;
+		text-align: center;
+
+	}
+	.upload-user-textbox .box10 {
+		grid-column: 6;
+		grid-row: 3/3;
+		font-size: 70%;
+		text-align: center;
+
+	}
+	.upload-user-textbox .box11 {
+		grid-column: 2/4;
+		grid-row: 3/3;
+		font-weight: bold;
+		font-size: 100%;
+
+	}
+	
+	
 	
 
