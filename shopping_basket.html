@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang='ko'>
+
+<head>
+	<title>home</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<style>
+	#main {
+		background: #fff;
+	}
+</style>
+
+<body>
+	<div class="page-wrap">
+		<!-- Main -->
+		<section id="main">
+			<section id="toolbar">
+				<div><img id="logo" src="images/back_button.png"></div>
+				<div>
+					<img id="login_text" src="images/shopping_cart-black.png">
+				</div>
+				<div><a href="search.html"><img id="search_icon" src="images/searchicon.png"></a></div>
+			</section>
+
+			<section id="content5">
+				<div id="User-profile" style="background-image: url('images/my_user_profile_background.png');">
+					<div class="box1">
+						<img src="images/gray_circle.png">
+					</div>
+					<div class="box2">
+						<h3>User_ID</h3>
+					</div>
+					<div class="box4">User_Profile</div>
+				</div>
+			</section>
+
+
+			<section class="point-section">
+				<div class="point-content">
+					<div><img src="images/black_circle.png"></div>
+					<div>300</div>
+					<div><img src="images/black_circle.png"></div>
+					<div>9</div>
+				</div>
+				<div class="point-content2">
+					<div>포인트</div>
+					<div></div>
+					<div>구매상품</div>
+					<div></div>
+				</div>
+			</section>
+			<section class="shopping-textbox">
+				<h3>주문/배송조회</h3>
+				<div class="point-content">
+					<div>0</div>
+					<div>4</div>
+					<div>0</div>
+					<div>5</div>
+				</div>
+				<div class="point-content2">
+					<div>임금/결제</div>
+					<div>배송중</div>
+					<div>배송완료</div>
+					<div>구매확정</div>
+				</div>
+
+				<h3>취소/교환/환불 내역</h3>
+				<div class="point-content">
+					<div>0</div>
+					<div>0</div>
+					<div>0</div>
+					<div>0</div>
+				</div>
+				<div class="point-content2">
+					<div>교환</div>
+					<div>교환완료</div>
+					<div>환불</div>
+					<div>환불완료</div>
+				</div>
+				<h3>유사 스타일 추천</h3>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<img src="images/goods1.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/goods2.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/goods3.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/goods1.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/goods2.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/goods3.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/goods1.png">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<div class="shopping-banner">
+				<div class="first"><img src="images/cart_people_img.png"></div>
+				<div class="second">
+					<h2>나만 이런취향이야?</h2>
+					<h4>취향 선호도를 고려한 AI 추천 바로가기<img src="images/패스.png"></h4>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- script -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+	</script>
+</body>
+
+</html>
