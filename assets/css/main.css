@@ -2400,4 +2400,70 @@
 		h4 {
 			margin: 5% 5% 5% 5%;
 		}
+/* others */
+    .others-profile-box {
+		background: none;
+		display: flex;
+		text-align: center;
+		margin: 0 5% 0 5%;
+	}
+		.others-profile-box h3{
+			margin: 0%;
+		}
+		.others-profile-box h5{
+			margin: 0%;
+		}
+		
+		.others-profile-box button{
+			all: none;
+			color: #5e5e5e;
+			font-size: 80%;
+			background-color: #d1d1d1;
+			border-radius: 1em;
+		}
+		.others-profile-box .box1 {
+			flex: 3;
+			width: 100%;
+			margin: auto;
+			margin-right: 5%;
+		}
+			.others-profile-box .box1 img{
+				width: 100%;
+				height: auto;
+				
+			}
+		.others-profile-box .box2 {
+			text-align: start;
+			flex: 6;
+			width: 100%;
+			margin: auto;
+		}
+		.others-profile-box .box3 {
+			flex: 2;
+			width: 100%;
+			margin: auto;
+		}
+		.others-profile-box .box4 {
+			flex: 4;
+			width: 100%;
+			margin: auto;
+		}
 
+	#others-profile p{
+		margin: 1% 5% 1% 5%;
+	}
+	.others-index {
+		margin: 3% 1% 3% 1%;
+		padding: 3% 1% 3% 1%;
+		display: flex;
+		text-align: center;
+		border-top: solid 1px #000;
+		border-bottom: solid 1px #000;
+	}
+		.others-index h3 {
+			margin: 0;
+		}
+	.others-index > div{
+		flex: 1;
+	}
+		.others-index

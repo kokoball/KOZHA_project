@@ -9,6 +9,7 @@
     
     }
     
+    
 
 
 /* toolbar */
@@ -47,7 +48,7 @@
 /* textholder */
     .textholder {
         border: solid 2px #707070;
-        margin: 0 5% 1.5em 5%;
+        margin: 0 5% 1em 5%;
         height: 2.3em;
         border-radius: 2em;
     }
@@ -55,6 +56,7 @@
             width: 94%;
             margin-left: 3%;
             border-style: none;
+            font-size: 80%;
         }
         .checkbox {
             float: right;
@@ -85,8 +87,10 @@
     .login-menu {
         margin: 3% 5% 3% 5%;
         display: flex;
+        
     }
         .login-menu > div {
+            font-size: 80%;
             color: #707070;
             text-align: center;
             flex: 1;
@@ -156,3 +160,31 @@
     .upload-text {
         margin-top: 1em;
     }
+
+/* register 2 */
+    .content-box {
+        margin: 3%;
+        padding: 30% 0 5% 0;
+        background-color: rgb(226, 222, 226);
+        min-height: 300px;
+        max-height: 600px;
+    }
+        .content-box h2 {
+            display: inline;
+            margin: 0;
+        }
+        .content-box p {
+            margin: 1% 10% 1% 10%;
+            font-size: 120%;
+        }
+        .content-box input {
+            margin: 5% 10% 5% 10%;
+            background-color:transparent;
+            text-decoration:underline;
+            border:none;
+            cursor: pointer;
+        }
+        .content-box button {
+            margin-top: 30%;
+        }
+      
