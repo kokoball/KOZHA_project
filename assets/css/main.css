@@ -2501,6 +2501,26 @@
 				padding: 3%;
 			}
 
+
+	@media(min-width:1500px){
+		.brand-banner {
+			text-align: center;
+		}
+		.brand-banner img{
+			width: 30%;
+			height: auto;
+		}
+		.brand-h3 {
+			font-size: 6em;
+		}
+		p {
+			font-size:2em
+		}
+	}
+			
+
+
+
 /* daily tab */
 	.daily-content {
 		padding-top: 5%;
@@ -2595,3 +2615,28 @@
 		.qna-imgs :nth-child(3){
 			flex: 1;
 		}
+	@media(min-width:1500px){
+		.qna-section .content1 img {
+			width: 50%;
+		}
+		.qna-section .content2 h4 {
+			font-size: 3 em;
+		}
+		.qna-section .content2 .qna-inner img{
+			width: 150%;
+		}
+		.qna-h3 {
+			font-size: 6em;
+		}
+		.qna-section p {
+			font-size:2em
+		}
+		.qna-imgs p {
+			font-size:2em
+		}
+		.qna-imgs div img {
+			width: 70%;
+		}
+	}
+
+	
