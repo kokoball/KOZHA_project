@@ -7,6 +7,15 @@
         margin: 0;
         height: 100%;
     }
+    h1 {
+        margin :5% 5% 5% 5%;
+    
+    }
+    
+    h3 {
+        margin :5% 5% 5% 5%;
+    }
+
     h4 {
         margin :5% 5% 5% 5%;
     
@@ -20,6 +29,7 @@
     text-decoration: none;
     color: inherit;
     }
+
 
 
 
@@ -65,6 +75,7 @@
     }
         .textholder input {
             width: 94%;
+            margin-top: 1%;
             margin-left: 3%;
             border-style: none;
             font-size: 80%;
@@ -210,6 +221,7 @@
         padding-bottom: 2px;
     }
     .profile-box{
+        margin: 3%;
         box-shadow: 0 3px 10px rgb(0 0 0 / 23%), 0 3px 10px rgb(0 0 0 / 16%);
     }
 
@@ -238,4 +250,16 @@
     }
     .box-image{
         width: 100%;
+    }
+
+    .btn-outline-info {
+        color: #fff;
+        border-color: #000000;
+        background-color: #000000;
+        margin-left: 3%;
+    }
+
+    .account-img{
+        margin-top: 3%;
+        margin-left: 5%;
     }

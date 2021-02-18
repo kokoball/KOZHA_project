@@ -31,7 +31,7 @@ class RegistrationForm(FlaskForm):
 class LoginForm(FlaskForm):
     email = StringField('이메일', validators=[DataRequired(), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
-    remember = BooleanField('Remember Me')  # 로그인 정보 쿠키에 저장
+    remember = BooleanField('자동로그인')  # 로그인 정보 쿠키에 저장
     submit = SubmitField('로그인')
 
 
