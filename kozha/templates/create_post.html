@@ -24,6 +24,7 @@
     <section class="upload-content">
         <div><br></div>
         <h3>스타일 이미지</h3>
+        <div class="box-plus"><img src="{{ url_for('static', filename='images/plus_button.png') }}"></div>
 
         <form method="POST" action="" , enctype="multipart/form-data">
             {{ form.hidden_tag()}}

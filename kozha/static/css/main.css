@@ -1758,8 +1758,6 @@
 		padding-bottom: 1px;
 		margin: 0%;
 		background-color: #fff;
-		box-shadow: 2px 3px gray;
-		
 	}
 	.media img {
 		object-position: cover;
@@ -2652,17 +2650,6 @@
 		}
 	}
 
-#main{
-		background-color: #fff;
-	}
-
-.txt-price{
-		color: #7b7b7b;;
-	}
-	
-.c-name {
-		font-size: large;
-	}
 	
 /* like-button */
 .b1 {
@@ -2776,3 +2763,17 @@
   40%{transform:scale(1.2);}
   100%{transform:scale(1);}
 }
+
+/* billy */
+#main{
+	background-color: #fff;
+}
+
+.txt-price{
+	color: #7b7b7b;;
+}
+
+.box11 a{
+	text-align: left;
+}
+

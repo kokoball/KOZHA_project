@@ -12,13 +12,19 @@
             <img src="{{ url_for('static', filename='images/more-vertical_button.png') }}">
         </div>
         <div class="box4">User_Profile</div>
-        <div class="box5"><h3>72</h3>Following</div>
-        <div class="box6"><h3>12.2K</h3>Followers</div>
-        <div class="box7"><h3>36.3M</h3>Likes</div>
+        <div class="box5">
+            <h3>72</h3>팔로우
+        </div>
+        <div class="box6">
+            <h3>12.2K</h3>팔로워
+        </div>
+        <div class="box7">
+            <h3>36.3M</h3>좋아요
+        </div>
         <div class="box8">
             <a href="{{ url_for('account') }}">
-                <button class="button" >
-                Edit Profile
+                <button class="button">
+                    프로필 수정
                 </button>
             </a>
         </div>
@@ -27,9 +33,15 @@
 
     <div id="User-tabs-container">
         <ul class="User-tabs">
-            <li><a href="#" data-tag="upload" class="button active"><img src="{{ url_for('static', filename='images/user-tab-all.png') }}"></a></li>
-            <li><a href="#" data-tag="like" class="button"><img src="{{ url_for('static', filename='images/user-tab-like.png') }}"></a></li>
-            <li><a href="#" data-tag="tag" class="button"><img src="{{ url_for('static', filename='images/user-tab-tag.png') }}"></a></li>
+            <li class="User-tabs">
+                <a href="#" data-tag="upload" class="button active"><img
+                        src="{{ url_for('static', filename='images/user-tab-upload.png') }}">
+                </a>
+            </li>
+            <li><a href="#" data-tag="like" class="button"><img
+                        src="{{ url_for('static', filename='images/user-tab-point.png') }}"></a></li>
+            <li><a href="#" data-tag="tag" class="button"><img
+                        src="{{ url_for('static', filename='images/user-tab-shop.png') }}"></a></li>
         </ul>
     </div>
     <div id="User-contents">
@@ -47,7 +59,8 @@
                             <div>Style Tag4</div>
                         </div>
                         <div id="inner-text-bottom-3">
-                            <div><img src="{{ url_for('static', filename='profile_pics/'+ post.author.image_file) }}"></div>
+                            <div><img src="{{ url_for('static', filename='profile_pics/'+ post.author.image_file) }}">
+                            </div>
                             <div>User_ID</div>
                             <div>조회수 6795</div>
                             <div>좋아요 239</div>
