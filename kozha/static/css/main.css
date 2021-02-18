@@ -1769,7 +1769,7 @@
 
 	.media .user_information {
 		display: grid;
-		grid-template-columns: 1.5fr repeat(7, 1fr) ;
+		grid-template-columns: 1.5fr repeat(8, 1fr) ;
 		grid-template-rows: 4fr;
 		grid-gap: 3px;
 	}
@@ -1797,7 +1797,7 @@
 
 	}
 	.user_information .box3 {
-		grid-column: 6/9;
+		grid-column: 6/10;
 		grid-row: 1/2;
 		font-size: 90%;
 
@@ -1820,13 +1820,13 @@
 
 	}
 	.user_information .box7 {
-		grid-column: 2/7;
+		grid-column: 2/6;
 		grid-row: 2/2;
 		font-weight: bold;
 		font-size: 120%;
 
 	}
-	.user_information .box8 {
+	/* .user_information .box8 {
 		grid-column: 6;
 		grid-row: 3/3;
 		font-size: 70%;
@@ -1843,29 +1843,29 @@
 		grid-row: 3/3;
 		font-size: 70%;
 		text-align: center;
-	}
+	} */
 	.user_information .box9 {
-		grid-column: 2;
+		grid-column: 2/4;
 		grid-row: 3/3;
 		color: gray;
 		font-size: 80%;
 
 	}
 	.user_information .box10 {
-		grid-column: 3;
+		grid-column: 4/6;
 		grid-row: 3/3;
 		color: gray;
 		font-size: 80%;
 
 	}
 	.user_information .box15 {
-		grid-column: 4;
+		grid-column: 6/8;
 		grid-row: 3/3;
 		color: gray;
 		font-size: 80%;
 	}
 	.user_information .box16 {
-		grid-column: 5;
+		grid-column: 8/10;
 		grid-row: 3/3;
 		color: gray;
 		font-size: 80%;
@@ -2668,8 +2668,8 @@
   transition: all .3s;
   transform-origin: center;
 }
-
-@media screen and (max-width: 1100px) {
+/* 1100 보다 작을 때*/
+@media screen and (max-width: 1100px) { 
 
 	.like-heart {
 		width: 30px;
