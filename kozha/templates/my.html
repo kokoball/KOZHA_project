@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block content %}
+<section id="content5">
+    <div id="User-profile" style="background-image: url('/static/images/my_user_profile_background.png');">
+        <div class="box1">
+            <img src="{{ image_file }}">
+        </div>
+        <div class="box2">
+            <h3>{{ current_user.username }}</h3>
+        </div>
+        <div class="box3">
+            <img src="{{ url_for('static', filename='images/more-vertical_button.png') }}">
+        </div>
+        <div class="box4">User_Profile</div>
+        <div class="box5"><h3>72</h3>Following</div>
+        <div class="box6"><h3>12.2K</h3>Followers</div>
+        <div class="box7"><h3>36.3M</h3>Likes</div>
+        <div class="box8">
+            <a href="{{ url_for('account') }}">
+                <button class="button" >
+                Edit Profile
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+    <div id="User-tabs-container">
+        <ul class="User-tabs">
+            <li><a href="#" data-tag="upload" class="button active"><img src="{{ url_for('static', filename='images/user-tab-all.png') }}"></a></li>
+            <li><a href="#" data-tag="like" class="button"><img src="{{ url_for('static', filename='images/user-tab-like.png') }}"></a></li>
+            <li><a href="#" data-tag="tag" class="button"><img src="{{ url_for('static', filename='images/user-tab-tag.png') }}"></a></li>
+        </ul>
+    </div>
+    <div id="User-contents">
+        <div class="content">
+            {% for post in my_posts %}
+            <div class="media upload">
+                <div class="upload-content">
+                    <div><img src="{{ url_for('static', filename='update_pics/'+ post.content_img) }}"></div>
+                    <div class="inner-text-bottom">
+                        <div id="inner-text-bottom-1">{{ post.title}}</div>
+                        <div id="inner-text-bottom-2">
+                            <div>Style Tag1</div>
+                            <div>Style Tag2</div>
+                            <div>Style Tag3</div>
+                            <div>Style Tag4</div>
+                        </div>
+                        <div id="inner-text-bottom-3">
+                            <div><img src="{{ url_for('static', filename='profile_pics/'+ post.author.image_file) }}"></div>
+                            <div>User_ID</div>
+                            <div>조회수 6795</div>
+                            <div>좋아요 239</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

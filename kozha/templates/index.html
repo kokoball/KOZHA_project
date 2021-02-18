@@ -1,0 +1,333 @@
+{% extends "layout.html" %}
+
+{% block weekly %}
+<section id="content1">
+	<div class="inner">
+		<h4>이주의 추천 아이템</h4>
+		<div class="inner-text">
+			<div></div>
+			<div>WEEKLY PICK</div>
+			<div>전체보기</div>
+		</div>
+		<!-- slideshow -->
+		<div class="main-slide-wrapper">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="{{url_for('static', filename='images/weekly_pick_1.png') }}">
+						<div class="inner-text-bottom">
+							<div id="inner-text-bottom-1">Style Title</div>
+							<div id="inner-text-bottom-2">
+								<div>Style Tag1</div>
+								<div>Style Tag2</div>
+								<div>Style Tag3</div>
+								<div>Style Tag4</div>
+							</div>
+							<div id="inner-text-bottom-3">
+								<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+								<div>User_ID</div>
+								<div>조회수 6795</div>
+								<div>좋아요 239</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="{{ url_for('static', filename='images/weekly_pick_1.png') }}">
+						<div class="inner-text-bottom">
+							<div id="inner-text-bottom-1">Style Title</div>
+							<div id="inner-text-bottom-2">
+								<div>Style Tag1</div>
+								<div>Style Tag2</div>
+								<div>Style Tag3</div>
+								<div>Style Tag4</div>
+							</div>
+							<div id="inner-text-bottom-3">
+								<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+								<div>User_ID</div>
+								<div>조회수 6795</div>
+								<div>좋아요 239</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="{{ url_for('static', filename='images/weekly_pick_1.png') }}">
+						<div class="inner-text-bottom">
+							<div id="inner-text-bottom-1">Style Title</div>
+							<div id="inner-text-bottom-2">
+								<div>Style Tag1</div>
+								<div>Style Tag2</div>
+								<div>Style Tag3</div>
+								<div>Style Tag4</div>
+							</div>
+							<div id="inner-text-bottom-3">
+								<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+								<div>User_ID</div>
+								<div>조회수 6795</div>
+								<div>좋아요 239</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="{{url_for('static', filename='images/weekly_pick_1.png') }}">
+						<div class="inner-text-bottom">
+							<div id="inner-text-bottom-1">Style Title</div>
+							<div id="inner-text-bottom-2">
+								<div>Style Tag1</div>
+								<div>Style Tag2</div>
+								<div>Style Tag3</div>
+								<div>Style Tag4</div>
+							</div>
+							<div id="inner-text-bottom-3">
+								<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+								<div>User_ID</div>
+								<div>조회수 6795</div>
+								<div>좋아요 239</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="{{url_for('static', filename='images/weekly_pick_1.png') }}">
+						<div class="inner-text-bottom">
+							<div id="inner-text-bottom-1">Style Title</div>
+							<div id="inner-text-bottom-2">
+								<div>Style Tag1</div>
+								<div>Style Tag2</div>
+								<div>Style Tag3</div>
+								<div>Style Tag4</div>
+							</div>
+							<div id="inner-text-bottom-3">
+								<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+								<div>User_ID</div>
+								<div>조회수 6795</div>
+								<div>좋아요 239</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+	<!-- gridshow -->
+	<ul class="gridshow-container">
+		<li>
+			<dl>
+				<dd class="img"><img src="{{url_for('static', filename='images/weekly_pick_1.png') }}"></dd>
+				<dt class="title">Style Title</dt>
+				<dd class="tag">
+					<div>Style tag1</div>
+					<div>Style tag2</div>
+					<div>Style tag3</div>
+					<div>Style tag4</div>
+				</dd>
+				<dd class="btm">
+					<div>
+						<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+						<div>User_ID</div>
+					</div>
+					<div>
+						<div>조회수</div>
+						<div>6795</div>
+					</div>
+					<div>
+						<div>좋아요</div>
+						<div>239</div>
+					</div>
+				</dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dd class="img"><img src="{{url_for('static', filename='images/weekly_pick_1.png') }}"></dd>
+				<dt class="title">Style Title</dt>
+				<dd class="tag">
+					<div>Style tag1</div>
+					<div>Style tag2</div>
+					<div>Style tag3</div>
+					<div>Style tag4</div>
+				</dd>
+				<dd class="btm">
+					<div>
+						<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+						<div>User_ID</div>
+					</div>
+					<div>
+						<div>조회수</div>
+						<div>6795</div>
+					</div>
+					<div>
+						<div>좋아요</div>
+						<div>239</div>
+					</div>
+				</dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dd class="img"><img src="{{url_for('static', filename='images/weekly_pick_1.png') }}"></dd>
+				<dt class="title">Style Title</dt>
+				<dd class="tag">
+					<div>Style tag1</div>
+					<div>Style tag2</div>
+					<div>Style tag3</div>
+					<div>Style tag4</div>
+				</dd>
+				<dd class="btm">
+					<div>
+						<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+						<div>User_ID</div>
+					</div>
+					<div>
+						<div>조회수</div>
+						<div>6795</div>
+					</div>
+					<div>
+						<div>좋아요</div>
+						<div>239</div>
+					</div>
+				</dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dd class="img"><img src="{{url_for('static', filename='images/weekly_pick_1.png') }}"></dd>
+				<dt class="title">Style Title</dt>
+				<dd class="tag">
+					<div>Style tag1</div>
+					<div>Style tag2</div>
+					<div>Style tag3</div>
+					<div>Style tag4</div>
+				</dd>
+				<dd class="btm">
+					<div>
+						<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+						<div>User_ID</div>
+					</div>
+					<div>
+						<div>조회수</div>
+						<div>6795</div>
+					</div>
+					<div>
+						<div>좋아요</div>
+						<div>239</div>
+					</div>
+				</dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dd class="img"><img src="{{url_for('static', filename='images/weekly_pick_1.png') }}"></dd>
+				<dt class="title">Style Title</dt>
+				<dd class="tag">
+					<div>Style tag1</div>
+					<div>Style tag2</div>
+					<div>Style tag3</div>
+					<div>Style tag4</div>
+				</dd>
+				<dd class="btm">
+					<div>
+						<div><img src="{{ url_for('static', filename='images/gray_circle.png') }}"></div>
+						<div style="text-align: center;">User_ID</div>
+					</div>
+					<div>
+						<div>조회수</div>
+						<div>6795</div>
+					</div>
+					<div>
+						<div>좋아요</div>
+						<div>239</div>
+					</div>
+				</dd>
+			</dl>
+		</li>
+	</ul>
+</section>
+
+{% endblock weekly %}
+
+{% block content %}
+
+<!-- new tab -->
+<section id="galleries">
+	<!-- Photo Galleries -->
+	<div class="gallery">
+		<div class="content">
+			<!-- 상품 진열 부분 -->
+			{% for post in posts %}
+			<div class="media">
+				<a href="{{ url_for('post', post_id=post.id) }}">
+					<img src="{{ url_for('static', filename='update_pics/'+post.content_img) }}" alt=""
+						title="This right here is a caption." />
+				</a>
+				<div class="user_information">
+					<div class="box1"><img
+							src="{{ url_for('static', filename = 'profile_pics/' + post.author.image_file) }}"></div>
+					<div class="box2">{{ post.author.username }}</div>
+					<div class="box3">{{ post.date_posted.strftime('%Y-%m-%d') }}</div>
+					<div class="box4"><img src="{{ url_for('static', filename='images/like_button.png') }}"></div>
+					<div class="box5"><img src="{{ url_for('static', filename='images/comment_button.png') }}"></div>
+					<div class="box6"><img src="{{ url_for('static', filename='images/share_button.png') }}"></div>
+					<div class="box7">{{ post.title }}</div>
+					<div class="box8">99+</div>
+					<div class="box13">99+</div>
+					<div class="box14">42</div>
+					<div class="box9">{{ post.tags[0].tagname }}</div>
+					<div class="box10">{{ post.tags[1].tagname }}</div>
+					<div class="box11">{{ post.content[:9] }}..<a href="{{ url_for('post', post_id = post.id) }}">view
+							more</a></div>
+					<div class="box12">View more</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<footer>
+		</footer>
+	</div>
+</section>
+
+<!-- MY tab -->
+
+<!-- Contact -->
+
+<!-- Footer -->
+
+<!-- upload button -->
+<div class="upload_button">
+	<a href="{{ url_for('new_post') }}"><img id="uploadB"
+			src="{{ url_for('static', filename='images/uploadbutton.png') }}"></a>
+</div>
+
+</section>>
+<!-- Scripts -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- slideshow -->
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex - 1].style.display = "block";
+	}</script>
+{% endblock content %}
