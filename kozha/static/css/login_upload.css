@@ -220,3 +220,18 @@
     .User-tabs a{
         color: black;
     }
+/* fahsion like style */
+    .fashion-like-style h3 {
+        text-align: center;
+        margin: 10% auto 3% auto;
+    }
+    .fashion-like-style div {
+        text-align: center;
+    }
+    .fashion-like-style img {
+        width: 60%;
+    }
+    .fashion-like-style h1 {
+        text-align: center;
+        margin: 3% auto 10% auto;
+    }
