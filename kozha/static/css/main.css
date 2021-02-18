@@ -1771,7 +1771,7 @@
 
 	.media .user_information {
 		display: grid;
-		grid-template-columns: 1.5fr 2fr 2fr 1fr 1fr 1fr ;
+		grid-template-columns: 1.5fr repeat(7, 1fr) ;
 		grid-template-rows: 4fr;
 		grid-gap: 3px;
 	}
@@ -1792,48 +1792,59 @@
 	}
 	
 	.user_information .box2 {
-		grid-column: 2/4;
+		grid-column: 2/6;
 		grid-row: 1/2;
 		font-weight: bold;
 		font-size: 110%;
 
 	}
 	.user_information .box3 {
-		grid-column: 4/7;
+		grid-column: 6/9;
 		grid-row: 1/2;
 		font-size: 90%;
 
 	}
 	.user_information .box4 {
-		grid-column: 4;
+		grid-column: 6;
 		grid-row: 2/2;
 		text-align: center;
 
 	}
 	.user_information .box5 {
-		grid-column: 5;
+		grid-column: 7;
 		grid-row: 2/2;
 		text-align: center;
 
 	}
 	.user_information .box6 {
-		grid-column: 6;
+		grid-column: 8;
 		grid-row: 2/2;
 
 	}
 	.user_information .box7 {
-		grid-column: 2/4;
+		grid-column: 2/7;
 		grid-row: 2/2;
 		font-weight: bold;
 		font-size: 120%;
 
 	}
 	.user_information .box8 {
-		grid-column: 4;
+		grid-column: 6;
 		grid-row: 3/3;
 		font-size: 70%;
 		text-align: center;
-
+	}
+	.user_information .box13 {
+		grid-column: 7;
+		grid-row: 3/3;
+		font-size: 70%;
+		text-align: center;
+	}
+	.user_information .box14 {
+		grid-column: 8;
+		grid-row: 3/3;
+		font-size: 70%;
+		text-align: center;
 	}
 	.user_information .box9 {
 		grid-column: 2;
@@ -1849,31 +1860,31 @@
 		font-size: 80%;
 
 	}
+	.user_information .box15 {
+		grid-column: 4;
+		grid-row: 3/3;
+		color: gray;
+		font-size: 80%;
+	}
+	.user_information .box16 {
+		grid-column: 5;
+		grid-row: 3/3;
+		color: gray;
+		font-size: 80%;
+	}
 	.user_information .box11 {
-		grid-column: 2/4;
+		grid-column: 2/8;
 		grid-row: 4/4;
 		font-weight: bold;
 		font-size: 100%;
 
 	}
 	.user_information .box12 {
-		grid-column: 4/7;
+		grid-column: 6/9;
 		grid-row: 4/4;
 		color: gray;
 		font-size: 70%;
 		text-align: right;
-	}
-	.user_information .box13 {
-		grid-column: 5;
-		grid-row: 3/3;
-		font-size: 70%;
-		text-align: center;
-	}
-	.user_information .box14 {
-		grid-column: 6;
-		grid-row: 3/3;
-		font-size: 70%;
-		text-align: center;
 	}
 
 
@@ -2653,3 +2664,115 @@
 		font-size: large;
 	}
 	
+/* like-button */
+.b1 {
+	width: 100%;
+	height: 100%;
+}
+
+.like-heart-btn {
+  display: inline-block;
+  font-size: 0;
+}
+
+.like-heart {
+  cursor: pointer;
+  padding-bottom: 20%;
+  transition: all .3s;
+  transform-origin: center;
+}
+
+@media screen and (max-width: 1100px) {
+
+	.like-heart {
+		width: 30px;
+	  }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+	.like-heart {
+		width: 27px;
+	  }
+
+}
+
+
+.like-heart:hover {
+  transform: scale(1.2);
+}
+
+.active > .like-heart {
+  animation: animateHeart .3s linear forwards;
+}
+
+.like-heart .heart-fill {
+  fill: white;
+  
+}
+
+.like-heart:hover .heart-fill {
+  fill: white;
+}
+
+.like-heart .heart-outline {
+  fill: black;
+  
+}
+
+.active > .like-heart .heart-fill,
+.active > .like-heart .heart-outline{
+  fill: #ff3c49;
+}
+
+
+.like-button-btn {
+  display: inline-block;
+  border: 2px solid #ff3c49;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 0;
+}
+
+.like-button {
+  cursor: pointer;
+  padding: 11px;
+  width: 24px;
+  transition: all .3s;
+  transform-origin: center;
+}
+
+.like-button:hover {
+  background-color: #ffeaeb;
+}
+
+.active > .like-button {
+  animation: animateHeart .3s linear forwards;
+}
+
+.like-button .heart-fill {
+  fill: white;
+}
+
+.like-button:hover .heart-fill {
+  fill: #ffeaeb;
+  transform: scale(1.2);
+}
+.active > .like-button:hover .heart-fill {
+  transform: none;
+}
+
+.like-button .heart-outline {
+  fill: #ff3c49;
+}
+
+.active > .like-button .heart-fill {
+  fill: #ff3c49;
+}
+
+@keyframes animateHeart{
+  0%{transform:scale(.2);}
+  40%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
