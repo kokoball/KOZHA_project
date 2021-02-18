@@ -87,7 +87,7 @@
         width: 80%; 
         margin: 0 10% 3% 10%;
         background-size: 100% 100%;
-        background-image: url( "/static/images/btn_kakao.png" );
+        background-image: url( "static/images/btn_kakao.png" );
         background-repeat: no-repeat;
         border: none;
         color: white;
@@ -220,6 +220,7 @@
     .User-tabs a{
         color: black;
     }
+
 /* fahsion like style */
     .fashion-like-style h3 {
         text-align: center;
@@ -234,4 +235,7 @@
     .fashion-like-style h1 {
         text-align: center;
         margin: 3% auto 10% auto;
+    }
+    .box-image{
+        width: 100%;
     }

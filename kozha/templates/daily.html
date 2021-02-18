@@ -125,14 +125,16 @@
 					<div class="box5"><img src="{{ url_for('static', filename='images/comment_button.png') }}"></div>
 					<div class="box6"><img src="{{ url_for('static', filename='images/share_button.png') }}"></div>
 					<div class="box7">{{ post.title }}</div>
-					<div class="box8">99+</div>
+					<!-- <div class="box8">99+</div>
 					<div class="box13">99+</div>
-					<div class="box14">42</div>
+					<div class="box14">42</div> -->
 					<div class="box9">{{ post.tags[0].tagname }}</div>
 					<div class="box10">{{ post.tags[1].tagname }}</div>
+					<div class="box15">{{ post.tags[2].tagname }}</div>
+					<div class="box16">{{ post.tags[3].tagname }}</div>
 					<div class="box11">{{ post.content[:9] }}..<a href="{{ url_for('post', post_id = post.id) }}">view
 							more</a></div>
-					<div class="box12">View more</div>
+					<div class="box12"></div>
 				</div>
 			</div>
 		</div>
