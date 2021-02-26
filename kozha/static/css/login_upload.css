@@ -1,0 +1,190 @@
+/* body */
+    body {
+        position: relative;
+        margin: 0;
+        height: 100%;
+    }
+    h4 {
+        margin :5% 5% 5% 5%;
+    
+    }
+    
+    
+
+
+/* toolbar */
+    .toolbar {
+        top: 0;
+        left: 0;
+        background-color: #FFF;
+        height: 40px;
+        margin: 10px;
+        display: flex;
+    }
+        .toolbar div img{
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            flex: 1;
+        } 
+        .toolbar :nth-child(1)  {
+            flex: 1;
+        }
+        .toolbar :nth-child(2) p {
+            text-align: center;
+            font-size: 140%;
+            font-weight: bold;
+            flex: 1;
+            margin: 0;
+        }
+        .toolbar :nth-child(3)  {
+            flex: 1;
+        }
+    .content {
+        margin: 0 0 5% 0;
+    }
+
+
+/* textholder */
+    .textholder {
+        border: solid 2px #707070;
+        margin: 0 5% 1em 5%;
+        height: 3.1em;
+        border-radius: 2em;
+    }
+        .textholder input {
+            width: 94%;
+            margin-left: 3%;
+            border-style: none;
+            font-size: 80%;
+        }
+        .checkbox {
+            float: right;
+            margin-right: 10%;
+        }
+    
+/* button */
+    .login-button {
+        width: 80%;
+        margin: 3% 10% 3% 10%;
+        background-color: black;
+        color: white;
+        border-radius: 2em;
+        height: 3.5em;
+    }
+    .kakao-button {
+        width: 80%; 
+        margin: 0 10% 3% 10%;
+        background-size: 100% 100%;
+        background-image: url( "/images/btn_kakao.png" );
+        background-repeat: no-repeat;
+        border: none;
+        color: white;
+        border-radius: 2em;
+        height: 3.5em;
+    }
+/* login menu */
+    .login-menu {
+        margin: 3% 5% 3% 5%;
+        display: flex;
+        
+    }
+        .login-menu > div {
+            font-size: 80%;
+            color: #707070;
+            text-align: center;
+            flex: 1;
+        }
+
+/* sns login */
+    .sns-login {
+        display: block;
+        border: none;
+        border-top:solid 1px;
+        margin: 10% 10% 10% 10%;
+        
+    }
+        .sns-login legend {
+            clear: both;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            padding-inline-start: 3%;
+            padding-inline-end: 3%;
+            border-width: initial;
+            border-style: none;
+            border-color: initial;
+            border-image: initial;
+        }
+
+/* upload page */
+    .upload-content {
+        margin: 5% 2% 5% 2%;
+        border: solid 1px #CECECE;
+        position: block;   
+        min-height: 500px;     
+    }
+        .upload-content h3 {
+            margin-left: 5%;
+        }
+    
+    .box-content {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .box {
+        margin: 5%;
+        width: 150px;
+        height: auto;
+        float: left;
+        position: relative;
+    }
+        .box .front {
+            position: absolute;
+            left: 50%;
+            margin-left: -30px;
+            top: 50%;
+            margin-top: -30px;
+        }
+            .box .front img{
+                width: 100%;
+            }
+            .box .back img{
+                width: 100%;
+            }
+        
+/* upload text */
+    .upload-text {
+        margin-top: 1em;
+    }
+
+/* register 2 */
+    .content-box {
+        margin: 3%;
+        padding: 30% 0 5% 0;
+        background-color: rgb(226, 222, 226);
+        min-height: 300px;
+        max-height: 600px;
+    }
+        .content-box h2 {
+            display: inline;
+            margin: 0;
+        }
+        .content-box p {
+            margin: 1% 10% 1% 10%;
+            font-size: 120%;
+        }
+        .content-box input {
+            margin: 5% 10% 5% 10%;
+            background-color:transparent;
+            text-decoration:underline;
+            border:none;
+            cursor: pointer;
+        }
+        .content-box button {
+            margin-top: 30%;
+        }
+      

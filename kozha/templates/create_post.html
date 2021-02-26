@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login_upload.css') }}">
+    <title> Document</title>
+</head>
+<body>
+    <section class="toolbar">
+        <div><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/back_button.png') }}"></a></div>
+        <div><p>Kozha</p></div>
+        <div></div>
+    </section>
+    
+    <section class="upload-content">
+        <h3>스타일 이미지</h3>
+        <div class="box-content">
+            <!-- <div class="box">
+                <div class="front"><img src="images/Page-1@2x.png"></div>
+                <div class="back"><img src="images/gray_box.png"></div>
+            </div> -->
+        </div>
+        <form method="POST" action="", enctype="multipart/form-data">
+            {{ form.hidden_tag()}}
+            <div class="">
+                {{ form.picture.label() }}
+                {{ form.picture(class="form-control-file") }}
+                {% if form.picture.errors %}
+                    {% for error in form.picture.errors %}
+                        <span>{{ error }}</span></br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="upload-text">
+                <h4>제목</h4>
+                <div class="textholder">
+                    <!-- {{ form.title.label(class="form-control-label") }} -->
+                    {% if form.title.errors %}
+                        {{ form.title(class="form-control form-control-lg is-invalid")}}
+                        <div class="">
+                            {% for error in form.title.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.title(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                
+                <h4>설명</h4>
+                <div class="">
+                    <!-- {{ form.content.label(class="form-control-label") }} -->
+                    {% if form.content.errors %}
+                        {{ form(class="form-control form-control-lg is-invalid")}}
+                        <div class="">
+                            {% for error in form.content.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                    {{ form.content(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <h4>태그</h4>
+                <div class="">
+                    <!-- {{ form.tag1.label(class="form-control-label") }} -->
+                    {% if form.tag1.errors %}
+                        {{ form(class="form-control form-control-lg is-invalid")}}
+                        <div class="">
+                            {% for error in form.tag1.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                    {{ form.tag1(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="">
+                    <!-- {{ form.tag2.label(class="form-control-label") }} -->
+                    {% if form.tag2.errors %}
+                        {{ form(class="form-control form-control-lg is-invalid")}}
+                        <div class="">
+                            {% for error in form.tag2.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                    {{ form.tag2(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="">
+                    <!-- {{ form.tag3.label(class="form-control-label") }} -->
+                    {% if form.tag3.errors %}
+                        {{ form(class="form-control form-control-lg is-invalid")}}
+                        <div class="">
+                            {% for error in form.tag3.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                    {{ form.tag3(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="">
+                    <!-- {{ form.tag4.label(class="form-control-label") }} -->
+                    {% if form.tag4.errors %}
+                        {{ form(class="form-control form-control-lg is-invalid")}}
+                        <div class="">
+                            {% for error in form.tag4.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                    {{ form.tag4(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </div>
+            <button class="login-button">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </button>
+        </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
