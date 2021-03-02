@@ -1593,7 +1593,6 @@ table.alt tfoot {
   width: 85%;
   margin-top: 2%;
   margin-bottom: 2%;
-  border: 1px solid gray;
   max-width: 450px;
   display: inline-block;
 }
@@ -1860,7 +1859,7 @@ table.alt tfoot {
 }
 .media .a-main-img {
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 @media (max-width: 525px) {
   .media .a-main-img {
@@ -1874,8 +1873,8 @@ table.alt tfoot {
 }
 
 .media .a-main-img .main-img {
-  width: 70%;
-  height: 100%;
+  width: 90%;
+  height: 98%;
 }
 
 .media .user_information {
