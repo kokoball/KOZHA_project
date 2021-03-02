@@ -112,8 +112,8 @@
 			<!-- 상품 진열 부분 -->
 			{% for post in posts %}
 			<div class="media">
-				<a href="{{ url_for('post', post_id=post.id) }}">
-					<img src="{{ url_for('static', filename='update_pics/'+post.content_img) }}" alt=""
+				<a class="a-main-img" href="{{ url_for('post', post_id=post.id) }}">
+					<img class="main-img" src="{{ url_for('static', filename='update_pics/'+post.content_img) }}" alt=""
 						title="This right here is a caption." />
 				</a>
 				<div class="user_information">
@@ -156,8 +156,8 @@
 					<div class="box12"></div>
 				</div>
 			</div>
+			{% endfor %}
 		</div>
-		{% endfor %}
 		<footer>
 		</footer>
 	</div>
