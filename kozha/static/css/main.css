@@ -2037,7 +2037,7 @@ table.alt tfoot {
   position: relative;
   width: 46%;
   min-height: 250px;
-  border: solid 1px #cecece;
+  border: solid 1px #fff;
 }
 
 .gridshow-container li:hover {
