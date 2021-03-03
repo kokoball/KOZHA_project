@@ -53,11 +53,11 @@ def register():
     form = RegistrationForm() # form 변수에 forms.py의 RegistrationForm() 객체를 저장
     if form.validate_on_submit(): # 양식이 다 채워진채로 서버에 post메세지가 발송되고 true를 반환받았으면
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8') # 입력한 패스워드를 해쉬화
-        user = User(username = form.username.data, email = form.email.data, password= hashed_password, style= form.style.data) # 입력받은 모든 패스워드를 user변수에 저장
+        user = User(username = form.username.data, email = form.email.data, password= hashed_password) # 입력받은 모든 패스워드를 user변수에 저장
         db.session.add(user) # 데이터베이스 User테이블에 입력받은 새로운 user를 추가
         db.session.commit() # 데이터베이스 저장
         flash('계정 생성이 완료되었습니다!', 'success') # 계정이 성공적으로 등록되었다는 문구 출력
-        return redirect(url_for('login'))   # 계정생성이 완료되면 로그인페이지로 이동
+        return redirect(url_for('like_worldcup'))   # 계정생성이 완료되면 로그인페이지로 이동
     return render_template('register.html', title='Register', form=form) # register.html 템플릿을 띄우고 타이틀은 'Register' 해당 템플릿에서 쓰이는 form은 위에서 forms.py에서 불러와 form에 저장해준 RegistrationFrom() 객체을 사용
 
 
@@ -278,30 +278,48 @@ def reset_token(token):
         return redirect(url_for('login')) 
     return render_template('reset_token.html', title='Reset Password', form=form)
 
-@app.route("/like_worldcup")
+@app.route("/like_worldcup", methods=['GET', 'POST'])
 def like_worldcup():
     return render_template('like_style.html')
 
-@app.route("/style_basic")
+@app.route("/style_basic", methods=['GET', 'POST'])
 def style_basic():
+    user = User.query.order_by(User.id.desc()).first()
+    user.style = '베이직'
+    db.session.commit()
     return render_template('style_basic.html')
 
-@app.route("/style_casual")
+@app.route("/style_casual", methods=['GET', 'POST'])
 def style_casual():
+    user = User.query.order_by(User.id.desc()).first()
+    user.style = '캐주얼'
+    db.session.commit()
     return render_template('style_casual.html')
 
-@app.route("/style_lovely")
+@app.route("/style_lovely", methods=['GET', 'POST'])
 def style_lovely():
+    user = User.query.order_by(User.id.desc()).first()
+    user.style = '러블리'
+    db.session.commit()
     return render_template('style_lovely.html')
 
-@app.route("/style_modernchic")
+@app.route("/style_modernchic", methods=['GET', 'POST'])
 def style_modernchic():
+    user = User.query.order_by(User.id.desc()).first()
+    user.style = '모던시크'
+    db.session.commit()
     return render_template('style_modernchic.html')
 
-@app.route("/style_sexy")
+@app.route("/style_sexy", methods=['GET', 'POST'])
 def style_sexy():
+    user = User.query.order_by(User.id.desc()).first()
+    user.style = '섹시'
+    db.session.commit()
     return render_template('style_sexy.html')
 
-@app.route("/style_unique")
+@app.route("/style_unique", methods=['GET', 'POST'])
 def style_unique():
+    user = User.query.order_by(User.id.desc()).first()
+    user.style = '유니크'
+    db.session.commit()
     return render_template('style_unique.html')

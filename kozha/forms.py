@@ -12,7 +12,6 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('비밀번호(Password)', validators=[DataRequired()])
     confirm_password=PasswordField('비밀번호확인(Confirm Password)', validators=[DataRequired(),EqualTo('password')])
     submit = SubmitField('다음')
-    style = StringField('스타일', validators=[DataRequired()])
     # 주소는 필수로 추가해야함
     
     def validate_username(self, username):

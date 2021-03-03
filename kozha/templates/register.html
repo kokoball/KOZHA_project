@@ -85,24 +85,9 @@
             {% endif %}
         </div>
         </div>
-          <h4>스타일(Style)</h4>
-          <div class="textholder">
-            <!-- {{ form.confirm_password.label(class="form-control-label") }} -->
-            {% if form.style.errors %}
-                {{ form.style(class="form-control form-control-lg is-invalid") }}
-                <div class="">
-                    {% for error in form.style.errors %}
-                        <span>{{ error }}</span>
-                    {% endfor %}
-                </div>
-            {% else %}
-                {{ form.style(class="form-control form-control-lg") }}
-            {% endif %}
-        </div>
         <br>
         <button class="login-button">
-          <!-- {{ form.submit(class="btn btn-outline-info")}} -->
-          <a href="{{ url_for('like_worldcup') }}">회원가입</a>
+          {{ form.submit(class="btn btn-outline-info")}}
         </button>
         </form>
     </section>
