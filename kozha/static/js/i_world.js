@@ -5,16 +5,16 @@ let end = 1;
 
 // 이미지 로딩
 let image_list1 = [
-    'images/interior/vs1_1.jpg',
-    'images/interior/vs1_2.jpg',
-    'images/interior/vs2_1.jpg',
-    'images/interior/vs2_2.jpg',
-    'images/interior/vs3_1.jpg',
-    'images/interior/vs3_2.jpg',
-    'images/interior/vs4_1.jpg',
-    'images/interior/vs4_2.jpg',
-    'images/interior/vs5_1.jpg',
-    'images/interior/vs5_2.jpg'
+    '/static/images/worldcup/vs1_1.jpg',
+    '/static/images/worldcup/vs2_1.jpg',
+    '/static/images/worldcup/vs1_2.jpg',
+    '/static/images/worldcup/vs2_2.jpg',
+    '/static/images/worldcup/vs3_1.jpg',
+    '/static/images/worldcup/vs3_2.jpg',
+    '/static/images/worldcup/vs4_1.jpg',
+    '/static/images/worldcup/vs4_2.jpg',
+    '/static/images/worldcup/vs5_1.jpg',
+    '/static/images/worldcup/vs5_2.jpg'
     ];
 
 function plus_array(arr1, arr2) {
@@ -32,32 +32,32 @@ function style_check(image_list2) {
     if (Math.max.apply(null,image_list2) == image_list2[0]) {
         f_style = "러블리"
         document.write('val :' + image_list2 + '<br>');
-        location.href="123.html"
+        location.href="/style_lovely"
     }
     else if (Math.max.apply(null,image_list2) == image_list2[1]) {
         f_style = "캐주얼"
         document.write('val :' + image_list2 + '<br>');
-        location.href="123.html"
+        location.href="/style_casual"
     }
     else if (Math.max.apply(null,image_list2) == image_list2[2]) {
         f_style = "베이직"
         document.write('val :' + image_list2 + '<br>');
-        location.href="123.html"
+        location.href="/style_basic"
     }
     else if (Math.max.apply(null,image_list2) == image_list2[3]) {
         f_style = "모던시크"
         document.write('val :' + image_list2 + '<br>');
-        location.href="123.html"
+        location.href="/style_modernchic"
     }
     else if (Math.max.apply(null,image_list2) == image_list2[4]) {
         f_style = "유니크"
         document.write('val :' + image_list2 + '<br>');
-        location.href="123.html"
+        location.href="/style_unique"
     }
     else if (Math.max.apply(null,image_list2) == image_list2[5]) {
         f_style = "섹시"
         document.write('val :' + image_list2 + '<br>');
-        location.href="123.html"
+        location.href="/style_sexy"
     }
 }
 

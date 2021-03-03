@@ -281,3 +281,27 @@ def reset_token(token):
 @app.route("/like_worldcup")
 def like_worldcup():
     return render_template('like_style.html')
+
+@app.route("/style_basic")
+def style_basic():
+    return render_template('style_basic.html')
+
+@app.route("/style_casual")
+def style_casual():
+    return render_template('style_casual.html')
+
+@app.route("/style_lovely")
+def style_lovely():
+    return render_template('style_lovely.html')
+
+@app.route("/style_modernchic")
+def style_modernchic():
+    return render_template('style_modernchic.html')
+
+@app.route("/style_sexy")
+def style_sexy():
+    return render_template('style_sexy.html')
+
+@app.route("/style_unique")
+def style_unique():
+    return render_template('style_unique.html')
