@@ -7,7 +7,7 @@ from kozha.models import User
 
 
 class RegistrationForm(FlaskForm):
-    username = StringField('성명(name)', validators=[DataRequired(), Length(min=2, max=20)])
+    username = StringField('닉네임', validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email', validators=[DataRequired(),Email()])
     password = PasswordField('비밀번호(Password)', validators=[DataRequired()])
     confirm_password=PasswordField('비밀번호확인(Confirm Password)', validators=[DataRequired(),EqualTo('password')])
@@ -27,16 +27,16 @@ class RegistrationForm(FlaskForm):
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(),Email()])
     password = PasswordField('Password', validators=[DataRequired()])
-    remember = BooleanField('Remember Me') # 로그인 정보 쿠키에 저장
+    remember = BooleanField('자동로그인') # 로그인 정보 쿠키에 저장
     submit = SubmitField('로그인')
 
 
 class UpdateAccountForm(FlaskForm):
-    username = StringField('성명(name)', validators=[DataRequired(), Length(min=2, max=20)])
-    email = StringField('Email', validators=[DataRequired(),Email()])
-    user_profile = TextAreaField('내 소개', validators=[DataRequired()])
+    username = StringField('닉네임', validators=[DataRequired(), Length(min=2, max=20)])
+    email = StringField('이메일', validators=[DataRequired(),Email()])
+    user_profile = TextAreaField('프로필 소개 수정', validators=[DataRequired()])
     picture = FileField('이미지 등록', validators=[FileAllowed(['png','jpg'])])
-    submit = SubmitField('Update')
+    submit = SubmitField('완료')
     # 주소는 필수로 추가해야함
     
     def validate_username(self, username):

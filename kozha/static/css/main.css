@@ -2290,7 +2290,7 @@ table.alt tfoot {
 
 .upload-content img {
   margin: 0;
-  max-width: 450px;
+  max-width: 95%;
   height: 100%;
 }
 .upload-content .inner-text-bottom {
@@ -2856,4 +2856,35 @@ h4 {
 
 .box11 a {
   text-align: left;
+}
+
+.photo1,
+.photo2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2%;
+}
+
+.img1,
+.img2 {
+  width: 500px;
+}
+
+.text > h3 {
+  margin-top: 10%;
+  margin-bottom: 0%;
+  display: flex;
+  justify-content: center;
+}
+
+.media {
+  border-radius: 8px;
+  padding: 2%;
+  padding-bottom: 1px;
+}
+
+.media.upload {
+  margin: 3%;
 }

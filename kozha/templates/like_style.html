@@ -1,38 +1,42 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Snapshot by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
-<html lang='ko'>
+<html lang="ko">
+  <head>
+    <title>코자홈페이지</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+  </head>
 
-<head>
-	<title>New</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
-</head>
+  <body>
+    <div class="like-frame">
+      <section class="world_cup">
+        <div class="title">
+          <span class="text"><h3>나에게 맞는 스타일을 클릭하세요</h3></span>
+        </div>
+        <div class="content">
+          <div class="photo1">
+            <img src="" class="img1" alt="안나옴" />
+          </div>
+          <div class="photo2">
+            <img src="" class="img2" alt="안나옴" />
+          </div>
+        </div>
+      </section>
+    </div>
 
-<body>
-	<div class="like-frame">
-		 <section class="world_cup">
-			<div class="title">
-				<span class="text"><h1>이상형 월드컵</h1></span>
-			</div>
-			 <div class="content">
-				 <div class="photo1">
-					<img src="" class="img1" alt="안나옴">
-				 </div>
-				 <div class="photo2">
-					 <img src="" class="img2" alt="안나옴">
-				 </div>
-			 </div>
-		 </section>
- </div>
-
-	<!-- Scripts -->
-	<script language="JavaScript" src="{{ url_for('static', filename='js/i_world.js') }}" charset="UTF-8"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script
+      language="JavaScript"
+      src="{{ url_for('static', filename='js/i_world.js') }}"
+      charset="UTF-8"
+    ></script>
+  </body>
 </html>
