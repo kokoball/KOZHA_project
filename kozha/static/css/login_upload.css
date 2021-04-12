@@ -256,3 +256,36 @@ a {
 form div {
   margin-bottom: 3%;
 }
+
+@media screen and (min-width: 1700px) {
+  .content {
+    width: 30%;
+    margin: 5% auto 2% auto;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .login-button {
+    width: 30%;
+    margin: 1% 35% 2% 35%;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .login-menu {
+    width: 40%;
+    margin: 0 30% 0 30%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .sns-login {
+    width: 30%;
+    margin: 2% 35% 2% 35%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .kakao-button {
+    width: 30%;
+    margin: 0% 35% 2% 35%;
+  }
+}

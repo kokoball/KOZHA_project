@@ -2575,6 +2575,9 @@ h4 {
   width: 100%;
   height: 80%;
 }
+.content-item a {
+  color: black;
+}
 .content-item p {
   margin: 0;
 }
